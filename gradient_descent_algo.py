@@ -27,7 +27,7 @@ cons = int(input("Enter the constant from obtained derivative with proper sign: 
 eq = Eq((coeff*x),-cons)
 #sol stores the solution of the equation
 sol = solve((eq),(x))
-print("On equating derivative to 0, x =",sol[0])
+print("On equating derivative to 0, local mimimum =",sol[0])
 
 p = int(input("Enter initial position: "))
 s = float(input("Enter step size: "))
@@ -56,5 +56,5 @@ while (i>=0):
 if(r<0):
     print("No solution")
 else:
-    print("Calculated x =",pl[len(pl)-1])    
+    print("Calculated local minimum =",pl[len(pl)-1])    
 
